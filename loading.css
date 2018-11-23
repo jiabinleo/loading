@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, red 14%, orange 28%, yellow 42%, green 56%, #008844 70%, blue 84%, purple 100%);
+  background-size: 400%;
+  background-position: 0% 100%;
+  animation: back 30s linear infinite;
+}
+.wrap .list {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 50px;
+  color: #fff;
+  font-weight: bolder;
+}
+.wrap .list .lis {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -33px;
+}
+.wrap .list .lis::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  font-size: 50px;
+}
+.wrap .list .lis:nth-of-type(1) {
+  left: -381px;
+  animation: y 4s linear infinite;
+}
+.wrap .list .lis:nth-of-type(1)::after {
+  content: 'l';
+  animation: q 4s linear infinite;
+  right: 0;
+  transform-origin: right top;
+}
+.wrap .list .lis:nth-of-type(2) {
+  left: -348px;
+  animation: y 4s 0.25s linear infinite;
+}
+.wrap .list .lis:nth-of-type(2)::after {
+  content: 'o';
+  animation: q 4s 0.25s linear infinite;
+  right: 0;
+  transform-origin: right top;
+}
+.wrap .list .lis:nth-of-type(3) {
+  left: -318px;
+  animation: y 4s 0.5s linear infinite;
+}
+.wrap .list .lis:nth-of-type(3)::after {
+  content: 'a';
+  animation: q 4s 0.5s linear infinite;
+  right: 0;
+  transform-origin: right top;
+}
+.wrap .list .lis:nth-of-type(4) {
+  left: -286px;
+  animation: y 4s 0.75s linear infinite;
+}
+.wrap .list .lis:nth-of-type(4)::after {
+  content: 'd';
+  animation: q 4s 0.75s linear infinite;
+  right: 0;
+  transform-origin: right top;
+}
+.wrap .list .lis:nth-of-type(5) {
+  left: -271px;
+  animation: y 4s 1s linear infinite;
+}
+.wrap .list .lis:nth-of-type(5)::after {
+  content: 'i';
+  animation: q 4s 1s linear infinite;
+  right: 0;
+  transform-origin: right top;
+}
+.wrap .list .lis:nth-of-type(6) {
+  left: -238px;
+  animation: y 4s 1.25s linear infinite;
+}
+.wrap .list .lis:nth-of-type(6)::after {
+  content: 'n';
+  animation: q 4s 1.25s linear infinite;
+  right: 0;
+  transform-origin: right top;
+}
+.wrap .list .lis:nth-of-type(7) {
+  left: -205px;
+  animation: y 4s 1.5s linear infinite;
+}
+.wrap .list .lis:nth-of-type(7)::after {
+  content: 'g';
+  animation: q 4s 1.5s linear infinite;
+  right: 0;
+  transform-origin: right top;
+}
+@keyframes back {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@keyframes y {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  20% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes q {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(6);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
